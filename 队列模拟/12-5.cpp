@@ -8,7 +8,7 @@ int main()
 {
 	using namespace std;
 	srand(time(0));
-	const int test_hours = 100000000;
+	const int test_hours = 100000;
 	int test_mins = test_hours * Min_per_hour;
 	int guest_per_hour;
 
@@ -18,11 +18,11 @@ int main()
 	Queue line; // create a wait line
 	Customer inservingcust; // a guest in serving
 	Customer newcust;		// a new customer
-	int total_wait_time = 0; //ËùÓĞ¹Ë¿ÍµÄµÈºò×ÜÊ±¼ä
-	int wait_time = 0;		//Ã¿Î»¹Ë¿ÍµÄµÈºòÊ±¼ä
-	int guest_served = 0;	//»ñµÃ·şÎñµÄ¹Ë¿Í×ÜÊı
-	int guest_count = 0;	//½øÈëÅÅ¶ÓµÄ¹Ë¿Í×ÜÊı
-	int turnaways = 0;		//±»¾Ü¾øÈë¶ÓµÄ¹Ë¿ÍÊı
+	int total_wait_time = 0; //æ‰€æœ‰é¡¾å®¢çš„ç­‰å€™æ€»æ—¶é—´
+	int wait_time = 0;		//æ¯ä½é¡¾å®¢çš„ç­‰å€™æ—¶é—´
+	int guest_served = 0;	//è·å¾—æœåŠ¡çš„é¡¾å®¢æ€»æ•°
+	int guest_count = 0;	//è¿›å…¥æ’é˜Ÿçš„é¡¾å®¢æ€»æ•°
+	int turnaways = 0;		//è¢«æ‹’ç»å…¥é˜Ÿçš„é¡¾å®¢æ•°
 	int serving_time = -1;			//minutes need to serve a guest
 
 	
